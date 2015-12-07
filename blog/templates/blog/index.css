@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width:100%,initial-scale=1">
-
-    <style type="text/css">
-        * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -43,13 +36,9 @@ img#avatar {
     transition: 1s;
 }
 
-.intro{
-    position: absolute;
-    top: 20%;
-    text-align: left;
-    margin-right: 30%;
-}
 #right{
+
+    color: white;
     bottom: 0%;
     position: fixed;
     text-align: center;
@@ -113,6 +102,8 @@ ul{
     height: 150px;
 }
 
+
+
 .link-panel {
     margin-top: 40px;
     font-size: 0.9rem;
@@ -126,9 +117,21 @@ ul{
     transition: inherit;
     height: 20px;
 }
+
 .link-panel .link {
     margin-bottom: 5px;
 }
+
+/*.panel:hover .link-panel a {*/
+    /*color: #22c3aa;*/
+/*}*/
+
+/*.panel:hover .link-panel a:hover {*/
+    /*color: #d0648a;*/
+/*}*/
+
+
+
 #xianzhe-img {
     max-width: 100%;
     position: absolute;
@@ -138,10 +141,14 @@ ul{
     -webkit-animation: breathing 5s ease-out infinite normal;
     animation: breathing 5s ease-out infinite normal;
 }
+
+
+
 @media screen and (max-width: 600px) {
     h2 {
         font-size: 2rem;
     }
+
     img#avatar {
         left: 50%;
         width: 80px;
@@ -149,15 +156,19 @@ ul{
         margin-left: -40px;
         border-radius: 40px;
     }
+
     .panel-left {
         width: 50%;
     }
+
     .panel-right {
         width: 50%;
         left: 50%;
         text-align: left;
     }
 }
+
+
 
 @-webkit-keyframes breathing {
     0% {
@@ -195,59 +206,3 @@ ul{
     }
 }
 
-
-    </style>
-    <title>website</title>
-    <script type="javascript"></script>
-</head>
-<body>
-    <div id="content">
-        <div class="container">
-            <div class="panel panel-left">
-                <div class="description">
-                    <h2>董兵</h2>
-                    <p>
-                        我真的好帅
-                    </p>
-                </div>
-                <div class="link-panel">
-                    <div class="link">
-                        <ul>
-                            <li><a href="/">主页</a> </li>
-                            <li><a href="http://blog.csdn.net/neal1991">博客</a></li>
-                            <li><a href="../cv_zh">简历</a></li>
-                            <li><a href="mailto:bing.ecnu@gmail.com">联系我</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="intro">
-                    <article>This site is implemented by Django, a open source python framkework. This site is deployed
-                at pythonanywhere, a free hosting company for web developed by python. This website is very elementary, which will
-                be completed in the future.
-                    </article>
-                </div>
-                <div id="right">By Neal</div>
-            </div>
-            <div class="panel panel-right">
-                <div class="description">
-                    <h2>Neal Caffery</h2>
-                    <p>I am really hansome!
-                    </p>
-                </div>
-                <div class="link-panel">
-                    <div class="link">
-                        <ul>
-                            <li><a href="/">Homepage</a> </li>
-                            <li><a href="http://blog.csdn.net/neal1991">Blog</a></li>
-                            <li><a href="../cv">Resume</a></li>
-                            <li><a href="mailto:bing.ecnu@gmail.com">Contact me</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</body>
-</html>
