@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
     <title>My CV</title>
@@ -55,7 +56,7 @@
             overflow: hidden;
 
             box-shadow: 0 0 6px #ccc;
-            background-image: url("1.jpg");
+            background-image: url({%static 'images/1.jpg'%});
             background-repeat: no-repeat;
             background-size: 15%;
             background-position: 100% 0%;
