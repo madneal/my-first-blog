@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from django.utils import timezone
 from .models import Post
 
@@ -15,3 +16,8 @@ def cv_zh(request):
 
 def index(request):
     return render(request,'blog/index.html',{})
+
+def download_file(request,filename):
+    with open(filename) as f:
+        c = f.read()
+    return HttpResponse(c)
