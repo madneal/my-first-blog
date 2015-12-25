@@ -7,7 +7,51 @@
     <!--<meat name="viewport" content="width=320px, user-scalable=no, initial-scale=1, maximum-scale=1"/>-->
     <link rel="stylesheet" href="{% static 'css/index.css'%}" type="text/css">
     <title>Neal's site</title>
-    <script type="javascript"></script>
+    <script type="javascript">
+        window.onload = function(){
+            var iBase = {
+                Id:function(name){
+                    return document.getElementById(name);
+                },
+                SetOpacity:function(ev,v){
+                    ev.filters?ev.style.filter='alpha(opacity=' + v + ')' : ev.style.opacity = v /100;
+                }
+            }
+
+            function fadeIn(elem,speed,opacity){
+                speed = speed ||20;
+                opacity = opacity ||100;
+                elem.style.display = 'block';
+                iBase.SetOpacity(elem,0);
+                var val = 0;
+                (function(){
+                    iBase.SetOpacity(elem,val);
+                    val += 5;
+                    if (val <= opacity){
+                        setTimeout(arguments.callee,speed)
+                    }
+                })();
+            }
+
+            function fadeOut(elem,speed,opacity){
+                speed = speed||20;
+                opacity = opacity || 100;
+                var val = 100;
+                (function()
+                {
+                    iBase.SetOpacity(elem,val);
+                    val -= 5;
+                    if(val >= opacity){
+                        elem.style.display='none';
+                    }
+                })();
+            }
+
+            document.getElementById("intro").onmouseover = function(){
+                fade
+            }
+        }
+    </script>
 </head>
 <body>
     <div id="content">
@@ -29,7 +73,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="intro">
+                <div class="intro" id="intro">
                     <article>This site is implemented by Django, a open source python framkework. This site is deployed
                 at pythonanywhere, a free hosting company for web developed by python. This website is very elementary, which will
                 be completed in the future.
