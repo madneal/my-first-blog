@@ -43,6 +43,7 @@ img#avatar {
     margin-left: 2%;
     margin-right: 30%;
     border: solid 1px;
+    display: none;
 }
 #right{
     bottom: 0%;
