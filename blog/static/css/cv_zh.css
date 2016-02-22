@@ -29,6 +29,11 @@
         a {
             color: #222;
         }
+        .label{
+            width: 24px;
+            height: 24px;
+            vertical-align: -5px;
+        }
         /* ________________________________________________________ */
         .rtl {
             direction: rtl;

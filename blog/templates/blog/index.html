@@ -6,58 +6,15 @@
     <meta name="viewport" content="width:100%,initial-scale=1">
     <!--<meat name="viewport" content="width=320px, user-scalable=no, initial-scale=1, maximum-scale=1"/>-->
     <link rel="stylesheet" href="{% static 'css/index.css'%}" type="text/css">
-    <script src="{%static 'js/jquery-1.11.3.min.js'%}"></script>
+    <script src="{% static 'js/jquery-1.11.3.min.js'%}"></script>
     <script>
         $(document).ready(function(){
-            $("intro").fadeIn("slow");
+            $("#intro").fadeIn();
+//            $("#intro").fadeOut();
+            $("#intro").fadeToggle();
         });
     </script>
     <title>Neal's site</title>
-    <script type="javascript">
-        window.onload = function(){
-            var iBase = {
-                Id:function(name){
-                    return document.getElementById(name);
-                },
-                SetOpacity:function(ev,v){
-                    ev.filters?ev.style.filter='alpha(opacity=' + v + ')' : ev.style.opacity = v /100;
-                }
-            }
-
-            function fadeIn(elem,speed,opacity){
-                speed = speed ||20;
-                opacity = opacity ||100;
-                elem.style.display = 'block';
-                iBase.SetOpacity(elem,0);
-                var val = 0;
-                (function(){
-                    iBase.SetOpacity(elem,val);
-                    val += 5;
-                    if (val <= opacity){
-                        setTimeout(arguments.callee,speed)
-                    }
-                })();
-            }
-
-            function fadeOut(elem,speed,opacity){
-                speed = speed||20;
-                opacity = opacity || 100;
-                var val = 100;
-                (function()
-                {
-                    iBase.SetOpacity(elem,val);
-                    val -= 5;
-                    if(val >= opacity){
-                        elem.style.display='none';
-                    }
-                })();
-            }
-
-            document.getElementById("intro").onmouseover = function(){
-                fade
-            }
-        }
-    </script>
 </head>
 <body>
     <div id="content">
@@ -66,7 +23,7 @@
                 <div class="description">
                     <h2>董兵</h2>
                     <p>
-                        我真的好帅
+                        我真的好酷
                     </p>
                 </div>
                 <div class="link-panel">
@@ -90,14 +47,14 @@
             <div class="panel panel-right">
                 <div class="description">
                     <h2>Neal Caffery</h2>
-                    <p>I am really hansome!
+                    <p>I am really cool!
                     </p>
                 </div>
                 <div class="link-panel">
                     <div class="link">
                         <ul>
                             <li><a href="/">Homepage</a> </li>
-                            <li><a href="http://blog.csdn.net/neal1991">Blog</a></li>
+                            <li><a href="http://blog.csdn.net/neal1991" target="_blank">Blog</a></li>
                             <li><a href="../cv/">Resume</a></li>
                             <li><a href="mailto:bing.ecnu@gmail.com">Contact me</a></li>
                         </ul>

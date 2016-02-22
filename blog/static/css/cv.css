@@ -23,8 +23,12 @@
         h3 {
             font-size: 130%;
         }
-
-
+        .label{
+            width: 200px;
+            height: 200px;
+            vertical-align: -5px;
+            display: block;
+        }
         p {
             margin: 0 0 10px 0;
         }
@@ -58,6 +62,8 @@
             line-height: 70px;
             text-align: center;
             color: #111;
+            padding-left: 40px;
+            vertical-align: middle;
         }
 
         #credit {

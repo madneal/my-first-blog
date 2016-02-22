@@ -9,7 +9,7 @@
     font-family: 'Lato';
     font-style: normal;
     font-weight: 900;
-    src: local('Lato #22c3aa'), local('Lato-#22c3aa'), url('../../blog/font/lato900.woff') format('woff');
+    src: local('Lato #22c3aa'), local('Lato-#22c3aa');
 }
 
 html, body {
@@ -43,7 +43,6 @@ img#avatar {
     margin-left: 2%;
     margin-right: 30%;
     border: solid 1px;
-    display: none;
 }
 #right{
     bottom: 0%;
