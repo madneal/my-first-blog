@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{%static 'css/weatherapp.css'%}">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,700,400' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.min.css'>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+    <title>Weather</title>
+</head>
+<body class="container">
+<body ng-app="Weather">
+<div class="container" ng-controller="MainCtrl">
+<header>
+    <div class="col-xs-12 weather-head">
+        <h1>Weather App</h1>
+    </div>
+</header>
+<!--<div style="background-color: red;width:50px;height: 50px;"></div>-->
+<div class="col-xs-8 col-xs-offset-5">
+    <ul class="app-list">
+        <li class="list-item">
+            <div class="location">{{Data.city}},{{Data.country}}</div>
+        </li>
+        <li class="list-item">
+            <div class="tem">{{Data.temp}} &#176;<span ng-click="Data.sys()" class="temp">
+                {{Data.unit}}</span>
+            </span></div>
+        </li>
+        <li class="list-item">
+            <div class="sky">{{Data.des}}</div>
+        </li>
+    </ul>
+    <div class="all-icon">
+        <div class="icon sun-shower hide ">
+            <div class="cloud"></div>
+            <div class="sun">
+                <div class="rays"></div>
+            </div>
+            <div class="rain"></div>
+        </div>
+        <div class="icon thunder-storm hide thunderstom">
+            <div class="cloud"></div>
+            <div class="lightning">
+                <div class="bolt"></div>
+                <div class="bolt"></div>
+            </div>
+        </div>
+        <div class="icon cloudy hide clouds">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+        </div>
+        <div class="icon flurries hide snow">
+            <div class="cloud"></div>
+            <div class="snow">
+                <div class="flake"></div>
+                <div class="flake"></div>
+            </div>
+        </div>
+        <div class="icon sunny hide clear">
+            <div class="sun">
+                <div class="rays"></div>
+            </div>
+        </div>
+
+        <div class="icon rainy hide rain">
+            <div class="cloud"></div>
+            <div class="rain"></div>
+        </div>
+    </div>
+</div>
+<footer class="col-xs-8 col-xs-offset-6">by <a href="http://neal1991.pythonanywhere.com" target="_blank">Neal</a> </footer>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+<script src="{%static 'js/weatherapp.js'%}"></script>
+</div>
+</body>
+</body>
+</html>

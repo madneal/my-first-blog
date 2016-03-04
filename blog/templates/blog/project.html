@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+              * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato #22c3aa'), local('Lato-#22c3aa');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #22c3aa;
+    color:white;
+    font-family: 'Lato', 'Microsoft YaHei', sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+        h1{
+            text-align: center;
+            font-size: larger;
+        }
+        .project{
+            margin:50px 50px auto 50px;
+            padding: inherit;
+        }
+        .list-item{
+            margin-bottom: 5px;
+            width: 80%;
+        }
+        .project-link{
+            margin-bottom: 50px;
+        }
+        a:hover{
+            font-size: larger;
+            color: #1b6d85;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>My project</title>
+</head>
+
+<body>
+    <header><h1>My Project</h1></header>
+    <div class="project">
+        <ul class="list-inline">
+            <li class="list-item">
+                <a href="http://codepen.io/nealecnu/full/GZpJrv/" target="_blank" class="project-link">weatherapp</a>
+                <p class="description">This a simple weather app which shows the weather according to your location. It will
+                disply the information about the weather. The app is implemented by html, css and angularjs. It utilizes the openweather api.</p>
+            </li>
+            <li class="list-item">
+                <a href="https://github.com/neal1991/my-first-blog" target="_blank" class="project-link">This website</a>
+                <p class="description">This website is implemented by Django, a open source python web framework. You can access the source code of
+                this website by the link provided above.</p>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>

@@ -21,6 +21,9 @@ def cv_zh(request):
 def index(request):
     return render(request,'blog/index.html',{})
 
+def weatherapp(request):
+    return render(request,'blog/weatherapp.html',{})
+
 def download_file(request):
     BASE = os.path.dirname(os.path.abspath(__file__))
     filename = os.path.join(BASE,"static/media/cv.pdf")
