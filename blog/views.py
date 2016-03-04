@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.utils import timezone
 from .models import Post
-from reportlab.pdfgen import canvas
+#from reportlab.pdfgen import canvas
 from django.http import StreamingHttpResponse
 import os
 # Create your views here.
