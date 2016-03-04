@@ -21,6 +21,9 @@ def cv_zh(request):
 def index(request):
     return render(request,'blog/index.html',{})
 
+def project(request):
+    return render(request,'blog/project.html',{})
+
 def weatherapp(request):
     return render(request,'blog/weatherapp.html',{})
 
