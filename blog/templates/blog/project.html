@@ -1,42 +1,54 @@
 <!DOCTYPE html>
+{% load static%}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
     <style type="text/css">
-              * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    vertical-align: bottom;
-}
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            vertical-align: bottom;
+        }
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Lato #22c3aa'), local('Lato-#22c3aa');
+        }
 
-@font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 900;
-    src: local('Lato #22c3aa'), local('Lato-#22c3aa');
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-    background-color: #22c3aa;
-    color:white;
-    font-family: 'Lato', 'Microsoft YaHei', sans-serif;
-    font-size: 1rem;
-    overflow-x: hidden;
-}
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #22c3aa;
+            color:white;
+            font-family: 'Lato', 'Microsoft YaHei', sans-serif;
+            font-size: 1.8rem;
+            /*overflow-x: hidden;*/
+        }
         h1{
             text-align: center;
             font-size: larger;
         }
+        .back-to-home{
+            margin: 2px 2px 2px 2px;
+
+        }
         .project{
             margin:50px 50px auto 50px;
-            padding: inherit;
+            /*padding: inherit;*/
+        }
+        .project-list{
+
+        }
+        ul{
+            list-style: circle;
+            list-style-position: inside;
         }
         .list-item{
             margin-bottom: 5px;
-            width: 80%;
+            width: 100%;
         }
         .project-link{
             margin-bottom: 50px;
@@ -46,14 +58,17 @@ html, body {
             color: #1b6d85;
         }
     </style>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <title>My project</title>
 </head>
 
 <body>
+    <div class="back-to-home">
+        <a class="btn btn-default btn-success" href="../" role="button">Homepage</a>
+    </div>
     <header><h1>My Project</h1></header>
     <div class="project">
-        <ul class="list-inline">
+        <ul class="list-inline project-list">
             <li class="list-item">
                 <a href="http://codepen.io/nealecnu/full/GZpJrv/" target="_blank" class="project-link">weatherapp</a>
                 <p class="description">This a simple weather app which shows the weather according to your location. It will
