@@ -27,6 +27,9 @@ def project(request):
 def weatherapp(request):
     return render(request,'blog/weatherapp.html',{})
 
+def myself(request):
+    return render(request,'blog/myself.html',{})
+
 def download_file(request):
     BASE = os.path.dirname(os.path.abspath(__file__))
     filename = os.path.join(BASE,"static/media/cv.pdf")
