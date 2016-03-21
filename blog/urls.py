@@ -10,8 +10,9 @@ urlpatterns = [
     url(r'^download_cv/',views.download_cv),
     url(r'^project/',views.project),
     url(r'^myself/',views.myself),
+    url(r'^paper/',views.paper),
     url(r'^weatherapp/',views.weatherapp),
-    url(r'^paper/',views.paper)
+
 
     # url(r'^index/',views.index,name='index'),
     # url(r'$',views.index,name='index'),
