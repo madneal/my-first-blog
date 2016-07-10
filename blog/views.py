@@ -16,7 +16,7 @@ def cv(request):
     return  render(request,'blog/cv-en.html',{})
 
 def cv_zh(request):
-    return render(request,'blog/cv_zh.html',{})
+    return render(request,'blog/cv-ch.html',{})
 
 def index(request):
     return render(request,'blog/index.html',{})

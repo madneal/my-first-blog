@@ -6,7 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css'%}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/resume.css'%}">
-	<title>Resume</title>
+	<style>
+		section .title{
+			text-align: center;
+		}
+	</style>
+	<title>个人简历</title>
 </head>
 <body>
 	<div class="container">
@@ -16,19 +21,19 @@
 					<div class="row">
 						<div class="col-xs-12 col-lg-4">
 							<div class="head-title">
-								<h2>NEAL CAFFERY</h2>
-								<h5>FRONTEND-DEVELOPER</h5>
+								<h2>董兵</h2>
+								<h5>前端开发</h5>
 							</div>
 						</div>
 						<div class="col-xs-12 col-lg-8">
 							<nav>
 								<ul>
-									<li id="home-active"><a href="#home">HOME</a></li>
-									<li><a href="#about">ABOUT</a></li>
-									<li><a href="#skills">SKILLS</a></li>
-									<li><a href="#educations">EDUCATIONS</a></li>
-									<li><a href="#experiences">EXPERIENCES</a></li>
-									<li><a href="#works">WORKS</a></li>
+									<li id="home-active"><a href="#home">主页</a></li>
+									<li><a href="#about">关于</a></li>
+									<li><a href="#skills">技能</a></li>
+									<li><a href="#educations">教育</a></li>
+									<li><a href="#experiences">经历</a></li>
+									<li><a href="#works">作品</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -43,7 +48,7 @@
 								<i class="fa fa-info-circle"></i>
 							</div>
 							<div class="title">
-							<h4>About</h4></div>
+							<h4>关于</h4></div>
 						</div>
 					</div>
 					<div class="col-xs-12 col-lg-11">
@@ -56,18 +61,19 @@
 							</div>
 							<div class="col-xs-12 col-lg-9">
 								<div class="text-holder">
-									<p>I am a undergraduate student from ECNU. I am proficent at English reading and writing. I like browse technology blogs and have attended some open source project's translation work, just like djangogirl. I am dedicated to be a front-end developer.</p>
+									<p>我是来自于华东师范大学的研究生。我擅长英语阅读和写作。平时喜欢浏览国外技术博客，曾经参加过一些开源项目的翻译工作，比如djangogirls.我致力于做一名前端开发工程师。
+                                        </p>
 								</div>
 								<div class="row">
 									<div class="col-xs-12 col-sm-6">
 										<ul>
 											<li class="round-row">
 												<i class="fa fa-map-marker"></i>
-                                                <span>Shanghai, China</span>
+												<span>中国，上海</span>
 											</li>
 											<li class="round-row">
-												<i class="fa fa-rss"></i>
-                                                <a href="http://blog.csdn.net/neal1991">CSDN博客</a>
+												<i class="fa fa-rss-square"></i>
+												<a href="http://blog.csdn.net/neal1991">CSDN blog</a>
 											</li>
 										</ul>
 									</div>
@@ -99,7 +105,7 @@
 								<i class="fa fa-wrench"></i>
 							</div>
 							<div class="title">
-								<h4>Skills</h4>
+								<h4>技能</h4>
 							</div>
 						</div>
 					</div>
@@ -109,7 +115,7 @@
 								<div class="col-xs-12 col-sm-6">
 									
 									<ul>
-								        <li><h4>Language & Framework</h4></li>
+								        <li><h4>语言 & 框架</h4></li>
 										<li class="round-row">
 											<label>Javascript</label>
 											<progress value="90" max="100"></progress>
@@ -148,7 +154,7 @@
 
 									<ul>
 									    <li>									<h4>
-										Editors & IDE
+										编辑器 & 集成开发环境
 									</h4></li>
 										<li class="round-row">
 											<label>Sublime Text</label>
@@ -158,8 +164,8 @@
 											<label>Intellij</label>
 											<progress value="80" max="100"></progress>
 										</li>
-                                        <li class="round-row">
-                                            <label>Chrome</label>
+										<li class="round-row">
+                                            <label>谷歌浏览器</label>
                                             <progress value="85" max="100"></progress>
                                         </li>
 										<li class="round-row">
@@ -188,7 +194,7 @@
 							<div class="section-icon">
 								<i class="fa fa-book"></i>
 							</div>
-							<div class="title"><h4>Education</h4></div>
+							<div class="title"><h4>教育</h4></div>
 						</div>
 					</div>
 					<div class="col-xs-12 col-lg-11">
@@ -198,12 +204,12 @@
 									<div class="edu">
 										<div class="head">
 											<div class="date-range">2014.9-2017.7</div>
-											<h3>East China Normal University</h3>
-											<h4>Shanghai, China</h4>
+											<h3>华东师范大学</h3>
+											<h4>中国上海</h4>
 										</div>
 										<div class="body">
-											<h3>Computer science & technology</h3>
-											<h3>Master degree</h3>
+											<h3>计算机科学与技术</h3>
+											<h3>硕士学位</h3>
 										</div>
 									</div>
 								</div>
@@ -211,12 +217,12 @@
 									<div class="edu">
 										<div class="head">
 											<div class="date-range">2009.9-2013.7</div>
-											<h3>Anhui Jianzhu University</h3>
-											<h4>Anhui, China</h4>
+											<h3>安徽建筑大学</h3>
+											<h4>中国，安徽</h4>
 										</div>
 										<div class="body">
-											<h3>Network engineering</h3>
-											<h3>Bachor degree</h3>
+											<h3>网络工程</h3>
+											<h3>学士学位</h3>
 										</div>
 										</div>
 									</div>
@@ -233,7 +239,7 @@
 							<div class="section-icon">
 								<i class="fa fa-briefcase"></i>
 							</div>
-							<div class="title"><h4>Experience</h4></div>
+							<div class="title"><h4>经历</h4></div>
 						</div>
 					</div>
 					<div class="col-xs-12 col-lg-11">
@@ -242,11 +248,12 @@
 								<div class="emp">
 									<div class="head">
 									    <div class="date-range">2016.4-now</div>
-										<h3>OOCL</h3>
-										<h4>Information System Development Center</h4>
+										<h3>东方海外货柜（上海）</h3>
+										<h4>信息系统开发中心</h4>
 									</div>
 									<div class="body">
-										<p>I am the front-end developer intern. I have attented mainly two projects of TMS and scrawler. The former is mainly the system of the management of logistics. I am mainly responsible for the design and development of some web pages. The main techniques include EXT and javascript. And the latter is the scrawler of port information. It mainly utilizes Node and three-party framework to parse the response. </p>
+										<p>我主要担任前端开发工程师。主要参与了两个系统的开发工作，包括TMS物流系统以及港口信息爬虫。前者主要是一个复杂的物流管理系统，我主要负责系统的部分页面的
+                                        设计和开发，主要涉及EXT以及javascript 技术。后面是队宁波，上海，福州多家港口信息的爬虫。这个项目基于NOEDE，并模拟请求获取数据，并且使用第三方框架解析响应，数据库使用mongo。</p>
 									</div>
 								</div>
 							</div>
@@ -254,11 +261,11 @@
 								<div class="emp">
 									<div class="head">
 									    <div class="date-range">2013.5-2014.4</div>
-										<h3>Vline</h3>
-										<h4>Software Developement Departement</h4>
+										<h3>合肥未来计算机开发有限公司</h3>
+										<h4>软件开发部</h4>
 									</div>
 									<div class="body">
-										<p>I am the software test engineer for several projects. Theses project are mainly OA systems developed by .NET. I am responsible for the testing and deployment. I collocated with developers to maintain the development of the projects.</p>
+										<p>我主要担任软件测试工程师。负责了几个OA项目，基本都是基于.NET的B/S架构的系统。我主要负责系统的测试和部署工作，系统开发人员来保持系统的稳定运行。与用户沟通，了解需求，并处理相应的一些紧急情况。</p>
 									</div>
 								</div>
 							</div>
@@ -274,7 +281,7 @@
 							<div class="section-icon">
 								<i class="fa fa-rocket"></i>
 							</div>
-							<div class="title"><h4>Works</h4></div>
+							<div class="title"><h4>作品</h4></div>
 						</div>
 					</div>
 					<div class="col-xs-12 col-lg-11">
