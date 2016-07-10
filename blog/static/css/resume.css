@@ -1,0 +1,144 @@
+.container{
+	border: 1px solid #dce2e4;
+	margin-top: 10px; 
+	background-color: #ecf0f1;
+}
+li{
+	list-style: none;
+}
+section{
+	margin-bottom: 20px;
+}
+section p{
+	background-color: #ecf0f1;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px;
+	text-align: justify;
+}
+nav{
+	padding: 10px;
+	background-color: #fff;
+	text-align: center;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+}
+nav ul li a{
+	text-decoration: none;
+	font-size: large;
+	color: #000;
+}
+.head-title{
+	background-color: #008d74;
+	padding: 5px;
+	color: #fff;
+	text-align: center;
+}
+#home-active{
+	background-color: #008d74;
+	padding: 5px;
+}
+#home-active a{
+	color: #fff;
+}
+.section-icon{
+	width: 70px;
+	height: 70px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	background-color: #16a085;
+	border: 3px solid #fbf6fa;
+	margin: 30px 0px 0;
+	padding: 15px 10px 10px;
+	text-align: center;
+}
+.section-icon i{
+	color: #feffff;
+	font-size: 30px;
+}
+.box-holder{
+	margin-top: 30px;
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.round-row{
+	background-color: #ecf0f1;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-size: 15px;
+	margin: 5px;
+	padding: 5px 3px;
+	list-style: none;
+	text-align: ccenter;
+	font-weight: bolder;
+}
+.round-row label{
+	width: 200px;
+	text-align: center;
+	padding-top: -10px;
+	margin-top: -15px;
+}
+.round-row h4{
+    margin-left: 400px;
+}
+progress{
+	width: 200px;
+	height: 25px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#about i{
+	margin-right: 10px;
+}
+.edu,.emp{
+	background-color: #ecf0f1;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.edu .head,.emp .head,.work-item .head{
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	background-color: #0a8d75;
+	border: 1px solid #0a8d75;
+	padding: 8px;
+}
+.edu .head h3,.emp .head h3{
+	color: #fff;
+	margin: 0;
+	line-height: 24px;
+}
+.edu .head h4,.emp .head h4,.work-item .head h4{
+	color: #ece0f1;
+	margin: 0;
+	line-height: 24px;
+}
+.edu .body,.emp .body{
+	padding: 5px;
+	color: #0a8d81;
+}
+.emp-item{
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+.date-range{
+	background-color: #0a8d81;
+	color: #fff;
+	display: inline-block;
+	float: right;
+	text-align: center;
+	margin-top: 30px;
+}
+.work-item a{
+	color: #f5f5f5;
+}
+.work-item .head span i{
+	margin-left: 20px;
+	position: absolute;
+	left: 20%;
+}

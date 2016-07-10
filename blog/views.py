@@ -13,7 +13,7 @@ def post_list(request):
     return render(request,'blog/index.html',{'posts':posts})
 
 def cv(request):
-    return  render(request,'blog/cv.html',{})
+    return  render(request,'blog/cv-en.html',{})
 
 def cv_zh(request):
     return render(request,'blog/cv_zh.html',{})
