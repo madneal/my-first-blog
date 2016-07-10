@@ -157,7 +157,7 @@ progress{
 .body i{
 	color: #000000;
 }
-#about i{
+#about ul i{
 	position: absolute;
 	left: 20%;
 }

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e92b773b-29fa-409e-bf99-46c9c8af6d57" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/cv-ch.html" afterPath="$PROJECT_DIR$/blog/templates/blog/cv-ch.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/cv-en.html" afterPath="$PROJECT_DIR$/blog/templates/blog/cv-en.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/css/resume.css" afterPath="$PROJECT_DIR$/blog/static/css/resume.css" />
     </list>
     <ignored path="djangogirls.iws" />
@@ -38,8 +36,8 @@
       <file leaf-file-name="resume.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/static/css/resume.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7863924">
-              <caret line="161" column="11" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.738924">
+              <caret line="159" column="10" selection-start-line="159" selection-start-column="10" selection-end-line="159" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -957,8 +955,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/css/resume.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7863924">
-          <caret line="161" column="11" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.738924">
+          <caret line="159" column="10" selection-start-line="159" selection-start-column="10" selection-end-line="159" selection-end-column="10" />
           <folding />
         </state>
       </provider>
