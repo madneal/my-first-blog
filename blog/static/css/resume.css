@@ -3,6 +3,9 @@
 	margin-top: 10px; 
 	background-color: #ecf0f1;
 }
+a:hover{
+	font-size: larger;
+}
 li{
 	list-style: none;
 }
@@ -139,5 +142,8 @@ progress{
 }
 .work-item a{
 	color: #f5f5f5;
+}
+.body i{
+	color: #000000;
 }
 
