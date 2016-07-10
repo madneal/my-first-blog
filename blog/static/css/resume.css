@@ -161,4 +161,13 @@ progress{
 	position: absolute;
 	left: 20%;
 }
+#certificates ul li{
+	background-color: #0a8d75;
+	color: #ecf0f1;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
 
