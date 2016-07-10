@@ -80,7 +80,7 @@ nav ul li a{
 	margin: 5px;
 	padding: 5px 3px;
 	list-style: none;
-	text-align: ccenter;
+	text-align: center;
 	font-weight: bolder;
 }
 .round-row label{
@@ -92,7 +92,20 @@ nav ul li a{
 .round-row h4{
     margin-left: 400px;
 }
+nav li span{
+	display: none;
+}
+nav li a:hover span{
+	float: right;
+	display: inline-block;
+}
+
 progress{
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+	background-color: #f3f3f3;
+	border: 0;
 	width: 200px;
 	height: 25px;
 	border-radius: 5px;
