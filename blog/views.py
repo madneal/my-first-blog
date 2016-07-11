@@ -81,5 +81,5 @@ def download_cv(request):
 #     return response
 
 def weixin(request):
-    response = 'ok'
+    response = HttpResponse('ok')
     return response
