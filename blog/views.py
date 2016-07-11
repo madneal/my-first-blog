@@ -24,6 +24,9 @@ def index(request):
 def project(request):
     return render(request,'blog/project.html',{})
 
+def project_zh(request):
+    return render(request,'blog/project_zh.html',{})
+
 def weatherapp(request):
     return render(request,'blog/weatherapp.html',{})
 

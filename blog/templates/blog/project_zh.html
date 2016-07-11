@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css'%}">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            vertical-align: bottom;
+        }
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Lato #22c3aa'), local('Lato-#22c3aa');
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #22c3aa;
+            color:white;
+            font-family: 'Lato', 'Microsoft YaHei', sans-serif;
+            font-size: 1.8rem;
+            /*overflow-x: hidden;*/
+        }
+        h1{
+            text-align: center;
+            font-size: larger;
+        }
+        .back-to-home{
+            margin: 2px 2px 2px 2px;
+
+        }
+        .project{
+            margin:50px 50px auto 50px;
+            /*padding: inherit;*/
+        }
+        .project-list{
+
+        }
+        ul{
+            list-style: circle;
+            list-style-position: inside;
+        }
+        .list-item{
+            margin-bottom: 5px;
+            width: 100%;
+        }
+        .project-link{
+            margin-bottom: 50px;
+        }
+        a:hover{
+            font-size: larger;
+            color: #1b6d85;
+        }
+    </style>
+
+    <title>My project</title>
+</head>
+
+<body>
+    <div class="back-to-home">
+        <a class="btn btn-default btn-success" href="../" role="button">主页</a>
+    </div>
+    <header><h1>项目</h1></header>
+    <div class="project">
+        <ul class="list-inline project-list">
+            <li class="list-item">
+                <a href="http://codepen.io/nealecnu/full/GZpJrv/" target="_blank" class="project-link">weatherapp</a>
+                <p class="description">这是一个简单的天气应用，根据你的位置信息来显示天气信息。这个APP主要运用了html, css以及Angular技术，并且还运用了openweather的api。这个应用被放在codepen
+                进行实时的展示。</p>
+            </li>
+            <li class="list-item">
+                <a href="https://github.com/neal1991/my-first-blog" target="_blank" class="project-link">This website</a>
+                <p class="description">这个个人主页由Django来实现，这是一个非常受欢迎的开源web开发框架。并且这个个人主页使用了一些bootstrap以及第三方框架。这个主页部署在一个优秀的托管公司<a href="http://www.pythonanywhere.com">pythonanywhere</a>，我使用的
+                是免费的版本。</p>
+            </li>
+            <li class="list-item">
+                <a href="https://github.com/neal1991/opencv-lane-vehicle-track">Lane Detection</a>
+                <p class="description">这个项目是一个简单的道路识别的项目。这个项目是基于图像处理的相关技术，由opencv实现。</p>
+            </li>
+            <li class="list-item">
+                <a href="../paper" class="project-link">Sampling in Latent Space for Multiobjective Estimation of Distribution Algorithm</a>
+                <p class="description">这篇论文是对于RM-MEDA算法的改进。它主要从一个独特的角度通过结合差分进化算法来解决采样问题。实验结果显著，这篇论文已经被EI检索会议IEEE CEC接受。</p>
+            </li>
+            <li class="list-item">
+                <a href="http://neal1991.github.io/ife-ecnu/index.html" target="_blank" class="project-link">ife-ecnu</a>
+                <p class="description">这个是百度前端学院的春季课程的学习课程。这个网站主要列举了这个学习课程中的任务列表。</p>
+            </li>
+            <li class="list-item">
+                <a href="https://github.com/neal1991/code-recognition" target="_blank" class="project-link">code recognition</a>
+                <p class="description">这个项目主要是为了识别网站登录时候的验证码。它利用了两个开源软件，imagemagick以及tesseract-ocr。前者是用来处理图像的，
+								后者是用来识别处理后的图片。实验结果对于一些干扰不是很大的验证码的识别结果还是很有效的。这个软件由NODE实现，你可以通过<a href="https://github.com/neal1991/code-recognition"><i class="fa fa-github"></i></a>来获取源代码。</p>
+        </ul>
+
+    </div>
+</body>
+</html>

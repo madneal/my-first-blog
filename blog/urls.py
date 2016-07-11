@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^project/',views.project),
     url(r'^myself/',views.myself),
     url(r'^paper/',views.paper),
+    url(r'^project_zh',views.project_zh),
     url(r'^weatherapp/',views.weatherapp),
 
 
