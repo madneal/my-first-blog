@@ -6,6 +6,8 @@ from django.utils import timezone
 from .models import Post
 #from reportlab.pdfgen import canvas
 from django.http import StreamingHttpResponse
+from django.core.exceptions import PermissionDenied
+import hashlib
 import os
 # Create your views here.
 def post_list(request):
@@ -81,5 +83,13 @@ def download_cv(request):
 #     return response
 
 def weixin(request):
-    response = HttpResponse('ok')
-    return response
+    token = 'neal1991'
+    signature = request.REQUEST.get('signature', '')
+    timestamp = request.REQUEST.get('timestamp', '')
+    nonce = request.REQUEST.get('nonce',  '')
+
+    tmp_str = hashlib.sha1(''.join(sorted([token, timestamp, nonce]))).hexdigest()
+    if tmp_str == signature:
+        return HttpResponse(request.REQUEST.get('echostr', ''))
+
+    raise PermissionDenied
