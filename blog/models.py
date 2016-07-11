@@ -18,14 +18,3 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-# class weatherApp(models.Model):
-#     city = models.ForeignKey()
-#     api = "http://api.openweathermap.org/data/2.5/weather?q=";
-#     units = "&units=metric";
-#     appid = "&APPID=061f24cf3cde2f60644a8240302983f2"
-#     cb = "&callback=JSON_CALLBACK";
-#
-#     url = "http://ipinfo.io/json?callback=JSON_CALLBACK"
-#     def get_location(self,url):
-#         obj = 'JSON'
-#         city = obj.city

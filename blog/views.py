@@ -79,3 +79,7 @@ def download_cv(request):
 #     p.showPage()
 #     p.save()
 #     return response
+
+def weixin(request):
+    response = 'ok'
+    return response
