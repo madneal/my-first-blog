@@ -27,9 +27,6 @@ def project(request):
 def project_zh(request):
     return render(request,'blog/project_zh.html',{})
 
-def weatherapp(request):
-    return render(request,'blog/weatherapp.html',{})
-
 def myself(request):
     return render(request,'blog/myself.html',{})
 
