@@ -1,0 +1,49 @@
+<xml>
+<ToUserName><![CDATA[{{ to_user }}]]></ToUserName>
+<FromUserName><![CDATA[{{ from_user }}]]></FromUserName> 
+<CreateTime>{{ create_time }}</CreateTime>
+<MsgType><![CDATA[{{ msg_type }}]]></MsgType>
+{% if msg_type == 'text' %}
+	<Content><![CDATA[{{ reply.msg_object.content }}]]></Content>
+{% elif msg_type == 'image' %}
+	<Image>
+	<MediaId>{{ media_id }}</MediaId>
+	</Image>
+{% elif msg_type == 'voice' %}
+	<Voice>
+	<MediaId>{{ media_id }}</MediaId>
+	</Voice>
+{% elif msg_type == 'video' %}
+	<Video>
+	<MediaId>{{ media_id }}</MediaId>
+	<ThumbMediaId>{{ thumb_media_id }}></ThumbMediaId>
+	</Video>
+{% elif msg_type == 'media' %}
+	<Music>
+	{% with reply.msg_object.item as media %}
+		<Title><![CDATA[{{ media.title }}]]></Title>
+		<Description><![CDATA[{{ media.description }}]]></Description>
+		<MusicUrl><![CDATA[{{ media.file.url|safe }}]]></MusicUrl>
+		<HQMusicUrl><![CDATA[{{ media.file.url|safe }}]]></HQMusicUrl>
+	{% endwith %}
+	</Music>
+{% elif msg_type == 'news' %}
+	<ArticleCount>{{ reply.msg_object.items.all|length }}</ArticleCount>
+	<Articles>
+	{% for item in reply.msg_object.items.all %}
+		<item>
+		<Title><![CDATA[{{ item.title }}]]></Title> 
+		<Description><![CDATA[{{ item.description }}]]></Description>
+		{% if forloop.first %}
+			<PicUrl><![CDATA[{{ item.pic_large.url|safe }}]]></PicUrl>
+		{% else %}
+			<PicUrl><![CDATA[{{ item.pic_small.url|safe }}]]></PicUrl>
+		{% endif %}
+		<Url>{% with item.url as url %}<![CDATA[{{ url|safe }}{% if '?' in url %}&{% else %}?{% endif %}openid={{ to_user }}{% if extra_params %}&{{ extra_params }}{% endif %}]]>{% endwith %}</Url>
+		</item>
+	{% endfor %}
+	</Articles>
+{% else %}
+    <Content><![CDATA[{{ reply.msg_object.content }}]]></Content>
+{% endif %}
+</xml>
