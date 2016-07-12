@@ -1,13 +1,13 @@
 from django.conf.urls import patterns, url
 from django.contrib import admin
 
-from .views import Weixin, UserLocationFetching
+from . import views
 
 admin.autodiscover()
 
 
 urlpatterns = patterns(
     '',
-    url(r'^location/fetch/$', UserLocationFetching.as_view(), name='weixin_fetch_user_location'),
-    url(r'^(\w+)/$', Weixin.as_view(), name='weixin_entry'),
+    url(r'^location/fetch/$', views.UserLocationFetching.as_view(), name='weixin_fetch_user_location'),
+    url(r'^(\w+)/$', views.Weixin.as_view(), name='weixin_entry'),
 )
