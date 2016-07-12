@@ -90,6 +90,6 @@ def weixin(request):
 
     tmp_str = hashlib.sha1(''.join(sorted([token, timestamp, nonce]))).hexdigest()
     if tmp_str == signature:
-        return HttpResponse(request.REQUEST.get('echostr', ''))
+        return HttpResponse(request.REQUEST.get('echostr', '123'))
 
     raise PermissionDenied

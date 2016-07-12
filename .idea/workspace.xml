@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e92b773b-29fa-409e-bf99-46c9c8af6d57" name="Default" comment="modify the index file for my resume">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/admin/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/admin/auth.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/admin/base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/admin/config.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/admin/event.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/admin/menu.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/admin/message.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/codes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/forms/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/forms/message.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/handlers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/management/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/management/commands/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/management/commands/_private.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/management/commands/threads.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/mixins.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/models/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/models/auth.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/models/event.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/models/menu.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/models/message.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/models/track.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/models/user.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/signals.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/templates/core/admin/change_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/templates/event/admin/change_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/templates/menu/admin/change_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/templates/xml/message.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/templates/xml/message_for_json.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/threads.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/utils/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/utils/cache.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/utils/cryptor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/utils/errors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/utils/ip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/utils/magic.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin/views.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/views.py" afterPath="$PROJECT_DIR$/blog/views.py" />
     </list>
     <ignored path="djangogirls.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,11 +33,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43378997">
+            <state vertical-scroll-proportion="0.0">
               <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8173516">
+              <caret line="92" column="63" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -142,13 +108,13 @@
         <option value="$PROJECT_DIR$/blog/static/css/resume.css" />
         <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/blog/urls.py" />
-        <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/blog/templates/blog/cv-ch.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/cv-en.html" />
         <option value="$PROJECT_DIR$/weixin/views.py" />
         <option value="$PROJECT_DIR$/weixin/models/auth.py" />
         <option value="$PROJECT_DIR$/weixin/urls.py" />
         <option value="$PROJECT_DIR$/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/blog/views.py" />
       </list>
     </option>
   </component>
@@ -882,14 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9583333">
@@ -940,8 +898,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43378997">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8173516">
+          <caret line="92" column="63" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
           <folding />
         </state>
       </provider>
