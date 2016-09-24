@@ -35,6 +35,9 @@ def myself(request):
 def paper(request):
     return render(request,'blog/paper.html',{})
 
+def paper1(request):
+    return render(request,'blog/paper1.html',{})
+
 def download_file(request):
     BASE = os.path.dirname(os.path.abspath(__file__))
     filename = os.path.join(BASE,"static/media/cv.pdf")

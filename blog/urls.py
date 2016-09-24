@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^project/',views.project),
     url(r'^myself/',views.myself),
     url(r'^paper/',views.paper),
+    url(r'^paper_ssci16/',views.paper1),
     url(r'^project_zh',views.project_zh),
     url(r'^weixin',views.weixin)
 
