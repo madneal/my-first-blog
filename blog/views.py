@@ -71,16 +71,7 @@ def download_cv(request):
 
     return  response
 
-# def output_pdf(request):
-#     response = HttpResponse(content_type='application/pdf')
-#     response['Content-Disposition'] = 'attachment;filename="cv.pdf"'
-#
-#     p = canvas.Canvas(response)
-#
-#     p.drawString(100,100,"hello world")
-#     p.showPage()
-#     p.save()
-#     return response
+
 
 def weixin(request):
     token = 'neal1991'
