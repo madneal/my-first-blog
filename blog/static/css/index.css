@@ -1,4 +1,4 @@
-      * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -95,10 +95,6 @@ ul{
 .panel-right:hover + img#avatar {
     transform: rotateY(180deg);
 }
-/*
-.description {
-    height: 150px;
-}*/
 
 .link-panel {
     margin-top: 40px;
