@@ -7,7 +7,7 @@ from django.http import HttpResponse
 
 @csrf_exempt
 def weixin_main(request):
-    if request.methos == "GET":
+    if request.method == "GET":
         signature = request.Get().get('signature', None)
         timestamp = request.Get().get('timestamp', None)
         nonce = request.Get().get('nonce', None)
