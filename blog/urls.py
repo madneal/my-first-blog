@@ -1,5 +1,6 @@
 from django.conf.urls import url
 from . import views
+import wx
 
 urlpatterns = [
     #url(r'^$',views.post_list,name='post_list'),
@@ -13,7 +14,7 @@ urlpatterns = [
     url(r'^paper/',views.paper),
     url(r'^paper_ssci16/',views.paper1),
     url(r'^project_zh',views.project_zh),
-    url(r'^weixin',views.weixin)
+    url(r'^wx', wx.weixin_main)
 
 
     # url(r'^index/',views.index,name='index'),
